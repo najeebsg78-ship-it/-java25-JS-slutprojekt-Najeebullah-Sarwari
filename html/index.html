@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="/css/searchForm-naji_lenova.css">  
+    <link rel="stylesheet" href="/css/searchForm.css"> 
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">MovieZ</h1>
+        </div>
+
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-items">Home</li>
+            <li class="menu-list-items">Movies</li>
+            <li class="menu-list-items">Tv-Series</li>
+            <li class="menu-list-items">Popular</li>
+            <li class="menu-list-items">Trends</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="search-form" class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for movies, tv shows..."
+        />
+        <button id="search-button">Search</button>
+      </form>
+
+      <div class="controls">
+          <select id="sort-select">
+            <option value="default">Sortera med:</option>
+            <option value="az">Titel A-Ö</option>
+            <option value="za">Titel Ö-A</option>
+            <option value="high">Betyg (högst först)</option>
+            <option value="low">Betyg (lägst först)</option>
+          </select>
+          
+          <button id="clear-search">Clear Search</button>
+      </div>
+
+      <div id="search-results"></div>
+
+      <div class="movie-list-container">
+        <h1>Popular Movies</h1>
+        <div class="movies" id="movie-list"></div>
+      </div>
+
+      <div class="series-list-container">
+        <h1>Popular Series</h1>
+        <div class="series" id="series-list"></div>
+      </div>
+
+      <div class="top-rated-movies-list-container">
+        <h1>Top Rated Movies</h1>
+        <div class="top-rated-movies" id="top-rated-movies-list"></div>
+      </div>
+
+      <div class="top-rated-series-list-container">
+        <h1>Top Rated Series</h1>
+        <div class="top-rated-series" id="top-rated-series-list"></div>
+      </div>
+    </div>
+
+  <script type="module" src="/js/script.js"></script>
+  <script type="module" src="/js/searchForm.js"></script>
+  </body>
+</html>

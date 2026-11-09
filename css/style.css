@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    background-color: darkred;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    color: rgb(227, 232, 236);
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: darkred;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.menu-container{
+    margin-left: 40px;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-list-items{
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list-items:hover{
+    background-color: rgb(53, 53, 53);
+    transform: scale(1.08);
+}
+
+/* Main content */
+
+
+.container {
+    background-color: darkred;
+    min-height: 100vh;
+    padding: 100px 20px 50px 20px;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Search */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0;
+    padding-bottom: 0;
+}
+    
+.search-container input{
+    padding: 15px 25px;
+    width: 350px;
+    border-radius: 20px 0 0 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.search-container button{
+    border-radius: 0 20px 20px 0;
+    padding: 15px 25px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(15, 13, 13);
+    transition: all 0.3s ease;    
+}
+
+.search-container button:hover{
+    color: white;
+    background-color: rgb(53, 50, 50);
+    transform: scale(1.08);
+    
+}
+
+/* Movie, Series, Top Rated Sections */
+.movies,
+.series,
+.top-rated-movies,
+.top-rated-series {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cards */
+.movie-card,
+.serie-card,
+.topRatedMovie-card,
+.person-card,
+.topRatedSeries-card{
+    width: 180px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover,
+.serie-card:hover,
+.person-card:hover,
+.topRatedMovie-card:hover,
+.topRatedSeries-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img,
+.serie-card img,
+.person-card img,
+.topRatedMovie-card img,
+.topRatedSeries-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie-card h3,
+.serie-card h3,
+.person-card h3,
+.topRatedMovie-card h3,
+.topRatedSeries-card h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.movie-list-container,
+.series-list-container,
+.top-rated-movies-list-container,
+.top-rated-series-list-container {
+    margin: 50px 0;
+}
+
+.movie-list-container h1,
+.series-list-container h1,
+.top-rated-movies-list-container h1,
+.top-rated-series-list-container h1 {
+    margin: 30px;
+}
+
+.movie-card p,
+.serie-card p,
+.person-card p,
+.topRatedMovie-card p,
+.topRatedSeries-card p{
+    font-size: 13px;
+    text-align: center;
+    color: rgb(215, 201, 201);
+    margin: 5px 0;
+}
+
